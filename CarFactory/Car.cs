@@ -10,5 +10,10 @@ namespace CarFactory
         public string Make { get; set; }
         public  string  Model { get; set; }
         public string Colour { get; set; }
+
+        public void PrintCar()
+        {
+            Console.WriteLine($"ID = {Id}, Make: {Make}, Model: {Model}, Colour: {Colour}");
+        }
     }
 }
