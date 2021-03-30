@@ -18,6 +18,12 @@ namespace CarFactory
             {
                 c.PrintCar();
             }
+            Console.WriteLine();
+        }
+
+        public List<Car> FilterByMake(string make)
+        {
+            return Cars.FindAll(c => c.Make == make);
         }
     }
 }
